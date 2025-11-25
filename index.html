@@ -6,6 +6,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fustat:wght@300&family=Noto+Serif+JP:wght@200&display=swap" rel="stylesheet">
     <style>
+      .main-container {
+        width: 1440px;
+        margin: auto;
+        background-color: #F8F4F4;
+      }
+
+      .content {
+        width: 1200px;
+        margin: auto;
+        background-color: #00F4F4;
+      }
+
       .fustat-sec {
         font-family: "Fustat", sans-serif;
         font-optical-sizing: auto;
@@ -36,12 +48,13 @@
         margin-top: 100px;
         text-align: center;
       }
-      
+
       #ring {
         float: right;
-        width: 300px; 
-        position: absolute;
-        bottom: -5px;
+        width: 300px;
+        position: relative;
+        bottom: 250px;
+        right: 50px;
       }
 
       h2 {
@@ -110,7 +123,8 @@
         margin: 10%;
       }
 
-      a:link, a:visited {
+      a:link,
+      a:visited {
         text-decoration: none;
         color: #F8F4F4;
       }
@@ -160,7 +174,7 @@
         position: relative;
         left: 100%;
       }
-      
+
       .lbody {
         display: flex;
         flex-direction: column;
@@ -178,7 +192,7 @@
         left: -30px;
         margin: 20px;
       }
-      
+
       .lcontentimg {
         position: absolute;
         right: -10px;
@@ -187,63 +201,67 @@
     </style>
   </head>
   <body>
-    <nav>
-      <ul id="navi">
-        <li><a href="/">portfolio</a></li>
-        <li><a href="about-me.html">about me</a></li>
-        <li><a href="/">contact</a></li>
-      </ul>
-    </nav>
-    <div class="title">
-      <h4 id="name">corynn fowler</h4>
-      <img id="ring" src="ringtext.png" alt="Graphic Design, UX, Illustrations">
-      <h1>creative portfolio.</h1>
-    </div>
-    <h5>view projects</h5>
-    <div class="centerimg">
-      <img src="downarrow.svg" alt="down arrow" width="20" height="40">
-    </div>
-    <div class="container-right">
-      <div class="rcontentimg">
-        <img src="welcome-bookapp.png" alt="Welcome Page Book App" style="float:left;width:300px;margin:10px">
-        <img src="book-profile.jpg" alt="Book Profile" style="float:left;width:179px;margin:10px">
-      </div>
-      <div class="rbody">
-        <h2>Interactive Prototype: Reading App</h2>
-        <p class="pr">A high-fidelity mockup focused on user interactions and platform navigation.</p>
-        <h3><a href="reading-app.html">explore &gt</a></h3>
-      </div>
-    </div>
-    <div class="container-left">
-      <div class="lbody">
-        <h2>Canine Coiffur Website Redesign</h2>
-        <p class="pl">A visual refresh with changes to improve aesthetics and website usability.</p>
-        <h3><a href="caninecoiffur.html">explore &gt</a></h3>
-      </div>
-      <div class="lcontentimg">
-        <img src="ccsite.png" alt="Canine Coiffur Landing Page" style="float:right;width:400px">
-      </div>
-    </div>
-    <div class="container-right">
-      <div class="rcontentimg">
-          <img src="mix.sip.smile.png" alt="Mo'Cha Slogan & Mockup" style="float:left;width:500px;margin:30px">
-      </div>
-      <div class="rbody">
-      <h2>Mo'Cha Bubble Tea Rebrand</h2>
-      <p class="pr">A full brand identity redesign, featuring new logos, packaging, and promotional materials.</p>
-        <h3><a href="mo'cha.html">explore &gt</a></h3>
+    <div class="main-container">
+      <nav>
+        <ul id="navi">
+          <li><a href="/">portfolio</a></li>
+          <li><a href="about-me.html">about me</a></li>
+          <li><a href="/">contact</a></li>
+        </ul>
+      </nav>
+      <div class="content">
+        <div class="title">
+          <h4 id="name">corynn fowler</h4>
+          <h1>creative portfolio.</h1>
+          <img id="ring" src="ringtext.png" alt="Graphic Design, UX, Illustrations">
         </div>
-    </div>
-    <div class="container-left">
-      <div class="lcontentimg">
-          <img src="emphasis.png" alt="Style Posters" style="float:right;width:250px">
-          <img src="style.png" alt="Style Posters" style="float:right;width:250px">
-      </div>
-      <div class="lbody">
-      <h2>Design Style Poster Series</h2>
-      <p class="pl">A series of five posters reflecting personal design styles in a visually cohesive manner.</p>
-        <h3><a href="posters.html">explore &gt</a></h3>
+        <h5>view projects</h5>
+        <div class="centerimg">
+          <img src="downarrow.svg" alt="down arrow" width="20" height="40">
         </div>
+        <div class="container-right">
+          <div class="rcontentimg">
+            <img src="welcome-bookapp.png" alt="Welcome Page Book App" style="float:left;width:300px;margin:10px">
+            <img src="book-profile.jpg" alt="Book Profile" style="float:left;width:179px;margin:10px">
+          </div>
+          <div class="rbody">
+            <h2>Interactive Prototype: Reading App</h2>
+            <p class="pr">A high-fidelity mockup focused on user interactions and platform navigation.</p>
+            <h3><a href="reading-app.html">explore &gt</a></h3>
+          </div>
+        </div>
+        <div class="container-left">
+          <div class="lbody">
+            <h2>Canine Coiffur Website Redesign</h2>
+            <p class="pl">A visual refresh with changes to improve aesthetics and website usability.</p>
+            <h3><a href="caninecoiffur.html">explore &gt</a></h3>
+          </div>
+          <div class="lcontentimg">
+            <img src="ccsite.png" alt="Canine Coiffur Landing Page" style="float:right;width:400px">
+          </div>
+        </div>
+        <div class="container-right">
+          <div class="rcontentimg">
+            <img src="mix.sip.smile.png" alt="Mo'Cha Slogan & Mockup" style="float:left;width:500px;margin:30px">
+          </div>
+          <div class="rbody">
+            <h2>Mo'Cha Bubble Tea Rebrand</h2>
+            <p class="pr">A full brand identity redesign, featuring new logos, packaging, and promotional materials.</p>
+            <h3><a href="mo'cha.html">explore &gt</a></h3>
+          </div>
+        </div>
+        <div class="container-left">
+          <div class="lcontentimg">
+            <img src="emphasis.png" alt="Style Posters" style="float:right;width:250px">
+            <img src="style.png" alt="Style Posters" style="float:right;width:250px">
+          </div>
+          <div class="lbody">
+            <h2>Design Style Poster Series</h2>
+            <p class="pl">A series of five posters reflecting personal design styles in a visually cohesive manner.</p>
+            <h3><a href="posters.html">explore &gt</a></h3>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
 </html>
