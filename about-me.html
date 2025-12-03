@@ -41,16 +41,14 @@
         font-style: normal;
         text-align: right;
         font-size: 23px;
-        width: 1200px;
-
+        width: 1440px;
       }
 
       #navi {
-        padding: 25px;
-        width: 1200px;
+        padding: 15px;
+        width: 1440px;
         position: sticky;
         top: 0;
-  
       }
       
       ul {
@@ -61,6 +59,8 @@
         list-style-type: none;
         display: inline;
         margin: 50px;
+        position: relative;
+        bottom: 20px;
       }
 
       a:link,
@@ -73,26 +73,75 @@
         color: #947979;
       }
       
-       h4 {
+      h1 {
+        color: #343332;
+        font-family: Noto Serif JP , serif;
+        font-size: 130px;
+        text-align: right;
+      }
+      
+      h3 {
+        color: #343332;
+        font-family: Noto Serif JP , serif;
+        font-size: 40px;
+        text-align: left;
+        margin-left: 150px;
+      }
+      
+      h4 {
         font-family: Noto Serif JP, serif;
         text-align: left;
         margin: 0;
         color: #F8F4F4;
       }
       
+      p {
+        color: #343332;
+        font-family: Fustat , sans-serif;
+        font-size: 60px;
+        text-align: left;
+        margin-left: 150px;
+        word-spacing: 100px;
+      }
+      
+      .header {
+        background-image: url("header.jpg");
+        width: 1440px;
+        height: 600px;
+        background-repeat: no-repeat; 
+        background-size: cover;
+        position: relative;
+        bottom: 87px;
+        right: 119px;
+      }
+      
+      .body {
+        width: 1200px;
+      }
     </style>
   </head>
   <body>
     <div class="main-container">
-      <div class="content">
-        <nav>
+      <nav>
         <ul id="navi">
-          <h4>corynn fowler</h4>
-          <li><a href="/">portfolio</a></li>
+          <h4 style="position:relative;top:10px;left:60px">corynn fowler</h4>
+          <li><a href="index.html">portfolio</a></li>
           <li><a href="about-me.html">about me</a></li>
-          <li><a href="/">contact</a></li>
+          <li><a href="contact.html">contact</a></li>
         </ul>
         </nav>
+      <div class="content">
+        <div class="header">
+          <h1 style="position:relative;top:270px;right:280px">contact<br> me</h1>
+          <hr style="height:2px;background-color:343332;width:60%;text-align:right;margin-right:240;position:relative;top:300px">
+        </div>
+        <div class="body">
+          <h3>email</h3>
+          <p>corynn.fowler@gmail.com</p>
+          <hr style="height:2px;background-color:343332;width:90%;text-align:left;margin-left:150;margin-top:150px;margin-bottom:150px;">
+          <h3>social links</h3>
+          <p>linkedin behance instagram</p>
+        </div>
       </div>
     </div>
   </body>
