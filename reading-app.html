@@ -80,11 +80,18 @@
         text-align: center;
       }
       
+      h2 {
+        font-family: Noto Serif JP, serif;
+        text-align: left;
+        margin: 0;
+        color: #343332;
+        font-size: 20px;
+      }
+      
       h3 {
         color: #343332;
         font-family: Fustat , sans-serif;
         font-size: 27px;
-        text-align: center;
         margin: 50px;
       }
       
@@ -125,11 +132,25 @@
         padding: 40px;
         padding-left: 90px;
         padding-right: 90px;
+        padding-bottom: 5px;
       }
       
       .body {
         width: 1200px;
       }
+      
+      .bio {
+        display: flex;
+        gap: 110px;
+        float: center;
+        margin: 30px;
+        padding-left: 0px;
+      }
+      
+      .bio-item {
+        float: left;
+      }
+      
     </style>
   </head>
   <body>
@@ -146,15 +167,24 @@
         <div class="header">
           <div class="headtext">
             <h1>Interactive Prototype: Reading App</h1>
-            <h3>A high-fidelity mockup focused on user interactions and platform navigation.</h3>
+            <h3 style="text-align:center">A high-fidelity mockup focused on user interactions and platform navigation.</h3>
           </div>
         </div>
         <div class="body">
-          <h3>email</h3>
-          <p>corynn.fowler@gmail.com</p>
-          <hr style="height:2px;background-color:343332;width:90%;text-align:left;margin-left:150;margin-top:150px;margin-bottom:150px;">
-          <h3>social links</h3>
-          <p>linkedin behance instagram</p>
+          <div class="bio">
+            <div class="bio-item">
+              <h2 style="position:relative;top:35px;left:50px">duration</h2>
+              <h3>2 weeks</h3>
+            </div>
+            <div class="bio-item">
+              <h2 style="position:relative;top:35px;left:50px">software</h2>
+              <h3>Figma</h3>
+            </div>
+            <div class="bio-item">
+              <h2 style="position:relative;top:35px;left:50px">skills</h2>
+              <h3>user research, wireframing, usability</h3>
+            </div>
+          </div>
         </div>
       </div>
     </div>
