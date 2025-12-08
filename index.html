@@ -72,14 +72,12 @@
         font-size: 20px;
         background-color: #343332;
         color: #F8F4F4;
-        width: 90px;
+        width: 85px;
         padding: 15px;
-        padding-left: 20px;
-        padding-right: 30px;
         display: inline;
         border-radius: 50px;
-        margin: 60px;
-        float: right;
+      
+        
       }
 
       h5 {
@@ -150,8 +148,7 @@
       }
 
       .container-right {
-        display: grid;
-        grid-template-columns: 50% 50%;
+        display: flex;
         gap: 20px;
         width: 80%;
         float: right;
@@ -165,8 +162,7 @@
       }
 
       .container-left {
-        display: grid;
-        grid-template-columns: 50% 50%;
+        display: flex;
         gap: 20px;
         width: 80%;
         float: left;
@@ -182,7 +178,6 @@
         display: flex;
         flex-direction: column;
         position: relative;
-        left: 100%;
       }
 
       .lbody {
@@ -198,14 +193,18 @@
       }
 
       .rcontentimg {
-        position: absolute;
-        left: -30px;
+        display: flex;
+        gap: 20px;
+        position: relative;
+        right: 200px;
         margin: 20px;
       }
 
       .lcontentimg {
-        position: absolute;
-        right: -10px;
+        display: flex;
+        gap: 20px;
+        position: relative;
+        left: 200px;
         margin: 20px;
       }
       
@@ -249,7 +248,7 @@
           <div class="rbody">
             <h2>Interactive Prototype: Reading App</h2>
             <p class="pr">A high-fidelity mockup focused on user interactions and platform navigation.</p>
-            <h3><a href="reading-app.html">explore &gt</a></h3>
+            <h3 style="position:relative;left:230px"><a href="reading-app.html">explore &gt</a></h3>
           </div>
         </div>
         <div class="container-left">
@@ -269,18 +268,18 @@
           <div class="rbody">
             <h2>Mo'Cha Bubble Tea Rebrand</h2>
             <p class="pr">A full brand identity redesign, featuring new logos, packaging, and promotional materials.</p>
-            <h3><a href="mo'cha.html">explore &gt</a></h3>
+            <h3 style="position:relative;left:230px"><a href="mo'cha.html">explore &gt</a></h3>
           </div>
         </div>
         <div class="container-left">
-          <div class="lcontentimg">
-            <img src="emphasis.png" alt="Style Posters" style="float:right;width:250px">
-            <img src="style.png" alt="Style Posters" style="float:right;width:250px">
-          </div>
-          <div class="lbody">
+           <div class="lbody">
             <h2>Design Style Poster Series</h2>
             <p class="pl">A series of five posters reflecting personal design styles in a visually cohesive manner.</p>
             <h3><a href="posters.html">explore &gt</a></h3>
+          </div>
+          <div class="lcontentimg">
+            <img src="emphasis.png" alt="Style Posters" style="float:right;width:250px">
+            <img src="style.png" alt="Style Posters" style="float:right;width:250px">
           </div>
         </div>
         <hr style="height:1px;background-color:343332;width:1440px;margin-top:300px;position:relative;right:120px">
